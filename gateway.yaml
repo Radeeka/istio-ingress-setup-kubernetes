@@ -1,0 +1,28 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: test-gateway
+  namespace: dev-env
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      #serverCertificate: /etc/istio/tls-term/crt
+      #privateKey: /etc/istio/tls-term/key
+      credentialName: tls-cred
+    hosts:
+    - "*.mytestdomain.com"
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+    hosts:
+    - "*.mytestdomain.com"
