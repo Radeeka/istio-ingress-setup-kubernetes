@@ -1,1 +1,0 @@
-This repo contains gateway and virtual service definitiosn files to be used by an istio-ingress in a kubernetes cluster. 
