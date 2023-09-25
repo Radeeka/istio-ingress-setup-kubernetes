@@ -2,7 +2,7 @@
 
 This repository contains Kubernetes manifest files for configuring an Istio Gateway and Virtual Service. These configurations are used to expose applications within a Kubernetes cluster to the internet via the Istio Ingress Gateway.
 
-Note: This setup assumes that you have a Isntio Ingress Gateway in place already for your Kubernetes cluster. To see how to setup, please refer to Istio Official Documentation. 
+### Note: This setup assumes that you have a Isntio Ingress Gateway in place already for your Kubernetes cluster. To see how to setup, please refer to Istio Official Documentation.
 
 ## Table of Contents
 
