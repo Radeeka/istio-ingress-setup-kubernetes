@@ -26,12 +26,12 @@ To use these manifest files to expose your applications, follow these steps:
 
 1. Clone this repository to your local machine.
    ```
-   git clone https://github.com/yourusername/your-istio-configs.git
+   git clone https://github.com/radeeka/istio-ingress-setup-kubernetes.git
    ```
 
 2. Change into the cloned directory.
    ```
-   cd your-istio-configs
+   cd istio-ingress-setup-kubernetes
    ```
 
 3. Review the `gateway.yaml` and `virtual-service.yaml` files and customize them to match your specific application and domain requirements. Modify hostnames, paths, and service references as needed.
